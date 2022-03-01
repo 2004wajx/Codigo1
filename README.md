@@ -1,4 +1,3 @@
-# Codigo1
 {{exec "remind" "2m45s" "__**Patata a minar!**__ ⛏"}}
 {{ $avatar := (joinStr "" "https://cdn.discordapp.com/avatars/" (toString .User.ID) "/" .User.Avatar ".png") }}
 {{ $embed := cembed
