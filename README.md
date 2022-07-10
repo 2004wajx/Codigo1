@@ -1,6 +1,6 @@
-{{exec "remind" "2m45s" "__**Patata a minar!**__ ⛏"}}
-{{ $avatar := (joinStr "" "https://cdn.discordapp.com/avatars/" (toString .User.ID) "/" .User.Avatar ".png") }}
-{{ $embed := cembed
+1 {{exec "remind" "2m45s" "__**Patata a minar!**__ ⛏"}}
+2 {{ $avatar := (joinStr "" "https://cdn.discordapp.com/avatars/" (toString .User.ID) "/" .User.Avatar ".png") }}
+3 {{ $embed := cembed
  "title" "⏰ Recordatorio Activado"
 "description" "**🔔 En** `2m45s` **te recuerdo usar** `!mine`" 
 "color" 4645612 
@@ -9,5 +9,5 @@
     "footer" (sdict "text" "Recuerda usar vida ❤️" "icon_url" "https://emoji.gg/assets/emoji/4794_Kanna_Nom_Ping.gif") 
     "timestamp" .Message.Timestamp
 }}
-{{sendMessage nil $embed}}
-{{deleteResponse 0}}
+4 {{sendMessage nil $embed}}
+5 {{deleteResponse 0}}
